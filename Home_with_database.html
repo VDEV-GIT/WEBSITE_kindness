@@ -119,7 +119,7 @@
     if (!text) return;
 
     try {
-      const res = await fetch("http://localhost:3000/notes", {
+      const res = await fetch("https://website-kindness.onrender.com/notes", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ content: text })
@@ -140,7 +140,7 @@
     noteList.innerHTML = "";
 
     try {
-      const res = await fetch("http://localhost:3000/notes");
+      const res = await fetch("https://website-kindness.onrender.com/notes");
       if (!res.ok) throw new Error("Failed to fetch notes");
       const notes = await res.json();
 
