@@ -1,0 +1,4 @@
+CREATE TABLE notes ( id INTEGER PRIMARY KEY AUTOINCREMENT, content TEXT NOT NULL, created_at DATETIME DEFAULT CURRENT_TIMESTAMP );
+
+INSERT INTO notes (id,content,created_at) VALUES (,'test',);
+
